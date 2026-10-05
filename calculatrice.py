@@ -4,6 +4,8 @@ def addition(a, b):
 def soustraction(a, b):
     return a - b
 
+def multiplication(a, b):
+    return a * b
 
 def calculatrice():
     print("=== Calculatrice ===")
@@ -21,6 +23,8 @@ def calculatrice():
         resultat = addition(a, b)
     elif choix == "2":
         resultat = soustraction(a, b)
+    elif choix == "3":
+        resultat = multiplication(a, b)
     else:
         resultat = "Choix invalide."
 
