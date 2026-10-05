@@ -6,6 +6,11 @@ def soustraction(a, b):
 
 def multiplication(a, b):
     return a * b
+    
+def division(a,b):
+    if b == 0:
+        return "Erreur: division par Zero"
+    return a / b
 
 def calculatrice():
     print("=== Calculatrice ===")
@@ -25,6 +30,8 @@ def calculatrice():
         resultat = soustraction(a, b)
     elif choix == "3":
         resultat = multiplication(a, b)
+    elif choix == "4":
+        resultat = division(a, b)
     else:
         resultat = "Choix invalide."
 
